@@ -1,0 +1,1388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Specialized AI Skills for Automated Data Analytics</title>
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Google Fonts: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500;600&display=swap" rel="stylesheet">
+  
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+    code, pre {
+      font-family: 'Fira Code', monospace;
+    }
+    /* 3D Flip Card Styles for Carousel Flashcards */
+    .perspective-1000 {
+      perspective: 1000px;
+    }
+    .transform-style-3d {
+      transform-style: preserve-3d;
+    }
+    .backface-hidden {
+      backface-visibility: hidden;
+      -webkit-backface-visibility: hidden;
+    }
+    .rotate-y-180 {
+      transform: rotateY(180deg);
+    }
+    /* Custom Scrollbar */
+    ::-webkit-scrollbar {
+      width: 8px;
+      height: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #f1f5f9;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #cbd5e1;
+      border-radius: 4px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #94a3b8;
+    }
+    /* Smooth transitions */
+    .transition-max-height {
+      transition: max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased selection:bg-indigo-500 selection:text-white">
+
+  <!-- TOP HEADER -->
+  <header class="bg-white border-b border-slate-200 sticky top-0 z-50 shadow-sm backdrop-blur-md bg-white/90">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16">
+        <div class="flex items-center space-x-3">
+          <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-indigo-600 to-violet-600 flex items-center justify-center text-white shadow-md shadow-indigo-100">
+            <i class="fa-solid fa-brain-circuit text-lg"></i>
+          </div>
+          <div>
+            <span class="text-xs font-bold uppercase tracking-wider text-indigo-600 block leading-none">Interactive Learning</span>
+            <span class="text-base font-bold text-slate-900 tracking-tight">AI Skills for Data Analytics</span>
+          </div>
+        </div>
+
+        <!-- Designer Credit -->
+        <div class="flex items-center text-xs sm:text-sm font-medium text-slate-600">
+          <span>Designed by&nbsp;</span>
+          <a href="https://www.linkedin.com/notifications/?filter=all" target="_blank" rel="noopener noreferrer" 
+             class="inline-flex items-center text-indigo-600 hover:text-indigo-800 font-semibold hover:underline">
+            <span>Anmoal Thethi</span>
+            <i class="fa-brands fa-linkedin ml-1.5 text-base"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Functional Breadcrumb Navigation -->
+      <nav aria-label="Breadcrumb" class="py-2.5 border-t border-slate-100 flex items-center space-x-2 text-xs overflow-x-auto whitespace-nowrap text-slate-500">
+        <a href="#intro" class="hover:text-indigo-600 flex items-center gap-1 transition-colors">
+          <i class="fa-solid fa-house text-slate-400"></i> Home
+        </a>
+        <i class="fa-solid fa-chevron-right text-[10px] text-slate-300"></i>
+        <a href="#objectives" class="hover:text-indigo-600 transition-colors">Objectives</a>
+        <i class="fa-solid fa-chevron-right text-[10px] text-slate-300"></i>
+        <a href="#four-pillars" class="hover:text-indigo-600 transition-colors">4 Building Blocks</a>
+        <i class="fa-solid fa-chevron-right text-[10px] text-slate-300"></i>
+        <a href="#flashcards" class="hover:text-indigo-600 transition-colors">Concept Carousel</a>
+        <i class="fa-solid fa-chevron-right text-[10px] text-slate-300"></i>
+        <a href="#skills-breakdown" class="hover:text-indigo-600 transition-colors">Modular Skills</a>
+        <i class="fa-solid fa-chevron-right text-[10px] text-slate-300"></i>
+        <a href="#gotchas-troubleshooting" class="hover:text-indigo-600 transition-colors">Gotchas & Rules</a>
+        <i class="fa-solid fa-chevron-right text-[10px] text-slate-300"></i>
+        <a href="#future-shift" class="hover:text-indigo-600 transition-colors">Human-AI Hybrid Future</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- MAIN CONTAINER -->
+  <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 space-y-12">
+
+    <!-- INTRO & OBJECTIVES HERO -->
+    <section id="intro" class="relative overflow-hidden rounded-3xl bg-gradient-to-br from-slate-900 via-indigo-950 to-slate-900 text-white p-6 sm:p-10 shadow-xl border border-slate-800">
+      <div class="absolute -right-10 -bottom-10 w-96 h-96 bg-indigo-500/10 rounded-full blur-3xl pointer-events-none"></div>
+      
+      <div class="relative z-10 max-w-4xl">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-indigo-500/20 border border-indigo-400/30 text-indigo-300 text-xs font-semibold mb-4">
+          <i class="fa-solid fa-sparkles"></i> Operational Guide & Architecture
+        </div>
+        <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-white mb-4 leading-tight">
+          Specialized AI Skills for Automated Data Analytics
+        </h1>
+        <p class="text-base sm:text-lg text-slate-300 leading-relaxed mb-6 font-normal">
+          Welcome to this interactive learning resource designed for data analysts, analytics engineers, and technical team leads. 
+          The aim and objective of this resource is to transform how analysts interact with Large Language Models—shifting from brittle, generic chat prompts to deterministic, modular AI skills executing across persistent context engines. By exploring these modules, you will master the 4 core architecture pillars, analyze specialized skills (such as hypothesis-driven EDA, daily focus digests, meeting prep, and metric anomaly detection), troubleshoot real-world operational pitfalls, and adopt senior-level analytical habits.
+        </p>
+        
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-4 border-t border-slate-800/80 text-sm">
+          <div class="flex items-center gap-3">
+            <span class="w-8 h-8 rounded-lg bg-indigo-600/30 flex items-center justify-center text-indigo-400">
+              <i class="fa-solid fa-bullseye"></i>
+            </span>
+            <span class="text-slate-300 font-medium">Prevent metric drift & hallucinations</span>
+          </div>
+          <div class="flex items-center gap-3">
+            <span class="w-8 h-8 rounded-lg bg-indigo-600/30 flex items-center justify-center text-indigo-400">
+              <i class="fa-solid fa-code-merge"></i>
+            </span>
+            <span class="text-slate-300 font-medium">Master Model Context Protocol (MCP)</span>
+          </div>
+          <div class="flex items-center gap-3">
+            <span class="w-8 h-8 rounded-lg bg-indigo-600/30 flex items-center justify-center text-indigo-400">
+              <i class="fa-solid fa-compass-drafting"></i>
+            </span>
+            <span class="text-slate-300 font-medium">Build reusable <code class="text-xs bg-slate-800 px-1 py-0.5 rounded text-indigo-300">skill.md</code> files</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 1: THE FOUR FOUNDATIONAL PILLARS (Interactive Tabs / Reveal) -->
+    <section id="four-pillars" class="space-y-4">
+      <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-2 border-b border-slate-200 pb-3">
+        <div>
+          <span class="text-xs font-bold tracking-wider text-indigo-600 uppercase">Architecture Foundations</span>
+          <h2 class="text-2xl font-bold text-slate-900 flex items-center gap-2">
+            <i class="fa-solid fa-cubes-stacked text-indigo-600"></i> The Four Building Blocks
+          </h2>
+        </div>
+        <p class="text-xs sm:text-sm text-slate-500">Click each pillar card to reveal its operational responsibility and vault implementation.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+        <!-- Pillar 1 -->
+        <div onclick="togglePillarCard(this)" class="group bg-white rounded-2xl p-5 border border-slate-200 hover:border-indigo-400 shadow-sm hover:shadow-md cursor-pointer transition-all duration-200 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <span class="w-10 h-10 rounded-xl bg-blue-50 text-blue-600 flex items-center justify-center text-lg font-bold group-hover:scale-110 transition-transform">
+                <i class="fa-solid fa-box-archive"></i>
+              </span>
+              <span class="text-xs px-2.5 py-0.5 rounded-full bg-slate-100 text-slate-600 font-semibold group-hover:bg-blue-100 group-hover:text-blue-700">Pillar 1</span>
+            </div>
+            <h3 class="font-bold text-slate-900 text-base mb-1">Second Brain</h3>
+            <p class="text-xs text-slate-500 mb-3">Local directory of structured Markdown files storing context & business logic.</p>
+            
+            <div class="pillar-details hidden pt-3 border-t border-slate-100 text-xs space-y-2 text-slate-600">
+              <p><strong>Primary Function:</strong> Houses persistent schemas, project notes, stakeholder profiles, and metrics definitions.</p>
+              <div class="bg-slate-50 p-2.5 rounded-lg border border-slate-200 text-slate-700">
+                <div class="font-semibold text-slate-800 mb-1"><i class="fa-regular fa-folder-tree mr-1"></i> Bigstart Collectibles Vault:</div>
+                <ul class="list-disc list-inside space-y-0.5 text-[11px]">
+                  <li><code class="text-indigo-600">01-Inbox/</code> (dumps, raw alerts)</li>
+                  <li><code class="text-indigo-600">02-Projects/</code> (active briefs, CEO memos)</li>
+                  <li><code class="text-indigo-600">03-Archives/</code> (stakeholders, metrics)</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="mt-4 pt-2 border-t border-slate-50 flex items-center justify-between text-xs text-indigo-600 font-semibold">
+            <span class="pillar-toggle-text">Click to inspect</span>
+            <i class="fa-solid fa-chevron-down text-[10px] transform transition-transform group-hover:translate-y-0.5"></i>
+          </div>
+        </div>
+
+        <!-- Pillar 2 -->
+        <div onclick="togglePillarCard(this)" class="group bg-white rounded-2xl p-5 border border-slate-200 hover:border-indigo-400 shadow-sm hover:shadow-md cursor-pointer transition-all duration-200 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <span class="w-10 h-10 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center text-lg font-bold group-hover:scale-110 transition-transform">
+                <i class="fa-solid fa-network-wired"></i>
+              </span>
+              <span class="text-xs px-2.5 py-0.5 rounded-full bg-slate-100 text-slate-600 font-semibold group-hover:bg-emerald-100 group-hover:text-emerald-700">Pillar 2</span>
+            </div>
+            <h3 class="font-bold text-slate-900 text-base mb-1">Model Context Protocol</h3>
+            <p class="text-xs text-slate-500 mb-3">Standardized open protocol connecting the agent to operational live applications.</p>
+            
+            <div class="pillar-details hidden pt-3 border-t border-slate-100 text-xs space-y-2 text-slate-600">
+              <p><strong>Primary Function:</strong> Securely queries external systems for live data points, threads, files, and events.</p>
+              <div class="bg-slate-50 p-2.5 rounded-lg border border-slate-200 text-slate-700">
+                <div class="font-semibold text-slate-800 mb-1"><i class="fa-solid fa-plug-circle-bolt mr-1"></i> Active Connectors:</div>
+                <ul class="list-disc list-inside space-y-0.5 text-[11px]">
+                  <li><strong>Gmail:</strong> Thread search & triage heuristics</li>
+                  <li><strong>Google Calendar:</strong> Timezone-locked lookups</li>
+                  <li><strong>Google Drive:</strong> Metadata & CSV metric queries</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="mt-4 pt-2 border-t border-slate-50 flex items-center justify-between text-xs text-indigo-600 font-semibold">
+            <span class="pillar-toggle-text">Click to inspect</span>
+            <i class="fa-solid fa-chevron-down text-[10px] transform transition-transform group-hover:translate-y-0.5"></i>
+          </div>
+        </div>
+
+        <!-- Pillar 3 -->
+        <div onclick="togglePillarCard(this)" class="group bg-white rounded-2xl p-5 border border-slate-200 hover:border-indigo-400 shadow-sm hover:shadow-md cursor-pointer transition-all duration-200 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <span class="w-10 h-10 rounded-xl bg-violet-50 text-violet-600 flex items-center justify-center text-lg font-bold group-hover:scale-110 transition-transform">
+                <i class="fa-solid fa-file-code"></i>
+              </span>
+              <span class="text-xs px-2.5 py-0.5 rounded-full bg-slate-100 text-slate-600 font-semibold group-hover:bg-violet-100 group-hover:text-violet-700">Pillar 3</span>
+            </div>
+            <h3 class="font-bold text-slate-900 text-base mb-1">AI Skill Files</h3>
+            <p class="text-xs text-slate-500 mb-3">Modular <code class="text-violet-700 font-semibold">.md</code> files specifying roles, steps, tools, and execution boundaries.</p>
+            
+            <div class="pillar-details hidden pt-3 border-t border-slate-100 text-xs space-y-2 text-slate-600">
+              <p><strong>Primary Function:</strong> Constrains raw LLM behavior before computation begins, forcing deterministic outputs.</p>
+              <div class="bg-slate-50 p-2.5 rounded-lg border border-slate-200 text-slate-700">
+                <div class="font-semibold text-slate-800 mb-1"><i class="fa-solid fa-list-check mr-1"></i> Key Skill Components:</div>
+                <ul class="list-disc list-inside space-y-0.5 text-[11px]">
+                  <li>Explicit trigger phrases & preconditions</li>
+                  <li>Strict non-negotiable analyst rules</li>
+                  <li>BLUF and formatted schema contracts</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="mt-4 pt-2 border-t border-slate-50 flex items-center justify-between text-xs text-indigo-600 font-semibold">
+            <span class="pillar-toggle-text">Click to inspect</span>
+            <i class="fa-solid fa-chevron-down text-[10px] transform transition-transform group-hover:translate-y-0.5"></i>
+          </div>
+        </div>
+
+        <!-- Pillar 4 -->
+        <div onclick="togglePillarCard(this)" class="group bg-white rounded-2xl p-5 border border-slate-200 hover:border-indigo-400 shadow-sm hover:shadow-md cursor-pointer transition-all duration-200 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <span class="w-10 h-10 rounded-xl bg-amber-50 text-amber-600 flex items-center justify-center text-lg font-bold group-hover:scale-110 transition-transform">
+                <i class="fa-solid fa-robot"></i>
+              </span>
+              <span class="text-xs px-2.5 py-0.5 rounded-full bg-slate-100 text-slate-600 font-semibold group-hover:bg-amber-100 group-hover:text-amber-700">Pillar 4</span>
+            </div>
+            <h3 class="font-bold text-slate-900 text-base mb-1">AI Agent</h3>
+            <p class="text-xs text-slate-500 mb-3">The reasoning engine interpreting requests, calling MCP tools, & executing loops.</p>
+            
+            <div class="pillar-details hidden pt-3 border-t border-slate-100 text-xs space-y-2 text-slate-600">
+              <p><strong>Primary Function:</strong> Evaluates prompt intent, loads necessary skills, invokes scripts, and outputs structured artifacts.</p>
+              <div class="bg-slate-50 p-2.5 rounded-lg border border-slate-200 text-slate-700">
+                <div class="font-semibold text-slate-800 mb-1"><i class="fa-solid fa-terminal mr-1"></i> Runtime Environments:</div>
+                <ul class="list-disc list-inside space-y-0.5 text-[11px]">
+                  <li><strong>Claude Code:</strong> Terminal-based agent CLI</li>
+                  <li><strong>Obsidian Claude Sidebar:</strong> Vault-native UI</li>
+                  <li>Local session cron scheduler (7:00 AM runs)</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="mt-4 pt-2 border-t border-slate-50 flex items-center justify-between text-xs text-indigo-600 font-semibold">
+            <span class="pillar-toggle-text">Click to inspect</span>
+            <i class="fa-solid fa-chevron-down text-[10px] transform transition-transform group-hover:translate-y-0.5"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 2: INTERACTIVE FLASHCARD CAROUSEL (DEFINITIONS) -->
+    <section id="flashcards" class="bg-white rounded-3xl p-6 sm:p-8 border border-slate-200 shadow-sm">
+      <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-6 pb-4 border-b border-slate-100">
+        <div>
+          <span class="text-xs font-bold tracking-wider text-indigo-600 uppercase">Active Recall</span>
+          <h2 class="text-2xl font-bold text-slate-900 flex items-center gap-2">
+            <i class="fa-solid fa-clone text-indigo-600"></i> Core Concepts & Definitions Carousel
+          </h2>
+          <p class="text-xs sm:text-sm text-slate-500 mt-1">
+            Click on any flashcard to flip between the keyword and its deep analytical definition.
+          </p>
+        </div>
+
+        <!-- Carousel Controls -->
+        <div class="flex items-center space-x-2">
+          <button id="prevBtn" onclick="prevCard()" class="w-10 h-10 rounded-xl bg-slate-100 hover:bg-indigo-600 hover:text-white text-slate-700 flex items-center justify-center transition-colors shadow-sm focus:outline-none" title="Previous Term">
+            <i class="fa-solid fa-chevron-left text-sm"></i>
+          </button>
+          <span id="cardCounter" class="text-xs font-semibold text-slate-500 px-2 min-w-[60px] text-center">1 / 10</span>
+          <button id="nextBtn" onclick="nextCard()" class="w-10 h-10 rounded-xl bg-slate-100 hover:bg-indigo-600 hover:text-white text-slate-700 flex items-center justify-center transition-colors shadow-sm focus:outline-none" title="Next Term">
+            <i class="fa-solid fa-chevron-right text-sm"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- Carousel Breadcrumbs / Direct Jumps -->
+      <div class="flex flex-wrap items-center gap-1.5 mb-6 text-xs" id="carouselBreadcrumbs">
+        <!-- Generated by JS -->
+      </div>
+
+      <!-- Flashcard 3D Stage -->
+      <div class="flex justify-center items-center py-2">
+        <div id="cardStage" class="w-full max-w-2xl h-80 perspective-1000 cursor-pointer select-none" onclick="flipCurrentCard()">
+          <div id="cardInner" class="relative w-full h-full duration-500 transform-style-3d rounded-2xl shadow-lg border border-slate-200">
+            
+            <!-- FRONT OF CARD (Term) -->
+            <div class="absolute w-full h-full backface-hidden bg-gradient-to-br from-white via-slate-50 to-indigo-50/40 rounded-2xl p-8 flex flex-col justify-between border-2 border-dashed border-indigo-200">
+              <div class="flex items-center justify-between">
+                <span id="cardCategory" class="px-3 py-1 rounded-full text-xs font-semibold bg-indigo-100 text-indigo-700">
+                  Concept Category
+                </span>
+                <span class="text-xs font-semibold text-slate-400 flex items-center gap-1">
+                  <i class="fa-solid fa-hand-pointer"></i> Click card to flip
+                </span>
+              </div>
+
+              <div class="text-center my-auto px-4">
+                <div id="cardIconContainer" class="w-16 h-16 mx-auto mb-4 rounded-2xl bg-indigo-600 text-white flex items-center justify-center text-2xl shadow-md shadow-indigo-200">
+                  <i id="cardIcon" class="fa-solid fa-file-code"></i>
+                </div>
+                <h3 id="cardTerm" class="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                  AI Skill File
+                </h3>
+                <p class="text-xs text-indigo-600 font-medium mt-2">Tap to inspect strict definition & enterprise context</p>
+              </div>
+
+              <div class="flex items-center justify-between text-xs text-slate-400 border-t border-slate-200/60 pt-3">
+                <span>Bigstart Collectibles Reference Guide</span>
+                <span>Term <span id="cardFooterIdx">1</span> of 10</span>
+              </div>
+            </div>
+
+            <!-- BACK OF CARD (Definition) -->
+            <div class="absolute w-full h-full backface-hidden rotate-y-180 bg-slate-900 text-white rounded-2xl p-8 flex flex-col justify-between border-2 border-indigo-500 shadow-xl overflow-y-auto">
+              <div>
+                <div class="flex items-center justify-between pb-3 border-b border-slate-800">
+                  <span id="backCardTerm" class="text-sm font-bold text-indigo-400 tracking-wide uppercase">AI Skill File</span>
+                  <span class="text-xs text-slate-400 flex items-center gap-1">
+                    <i class="fa-solid fa-rotate-left"></i> Click anywhere to flip back
+                  </span>
+                </div>
+                <div class="mt-4 space-y-3">
+                  <p id="cardDefinition" class="text-sm sm:text-base leading-relaxed text-slate-200">
+                    A structured Markdown (.md) document defining explicit roles, trigger phrases, tools, and non-negotiable analytical rules to constrain an LLM agent prior to code execution.
+                  </p>
+                  <div id="cardExampleBox" class="bg-slate-800/80 p-3 rounded-xl border border-slate-700 text-xs text-slate-300">
+                    <span class="font-bold text-amber-400 block mb-1"><i class="fa-solid fa-triangle-exclamation mr-1"></i> Enterprise Impact:</span>
+                    <span id="cardExampleText">Eliminates hallucinations, schema misalignment, and metric drift (e.g. confusing order-date with settlement-date).</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="text-[11px] text-slate-500 pt-3 border-t border-slate-800 flex justify-between">
+                <span>Self-Contained Instruction Set</span>
+                <span class="text-indigo-400 font-mono">Status: Standardized</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3: CORE AI SKILLS DETAILED BREAKDOWN (Interactive Tabbed Accordion) -->
+    <section id="skills-breakdown" class="space-y-6">
+      <div class="border-b border-slate-200 pb-3 flex flex-col sm:flex-row sm:items-end justify-between gap-2">
+        <div>
+          <span class="text-xs font-bold tracking-wider text-indigo-600 uppercase">Modular Implementations</span>
+          <h2 class="text-2xl font-bold text-slate-900 flex items-center gap-2">
+            <i class="fa-solid fa-microchip text-indigo-600"></i> Core AI Skills Catalog
+          </h2>
+        </div>
+        <span class="text-xs sm:text-sm text-slate-500">Switch tabs to explore step-by-step methodologies & MCP signatures</span>
+      </div>
+
+      <!-- Skill Selection Tabs -->
+      <div class="flex items-center space-x-2 overflow-x-auto pb-2 border-b border-slate-200" id="skillTabs">
+        <button onclick="switchSkillTab('eda')" class="skill-tab-btn active px-4 py-2.5 rounded-xl font-semibold text-xs sm:text-sm transition-all duration-200 flex items-center gap-2 bg-indigo-600 text-white shadow-sm" data-skill="eda">
+          <i class="fa-solid fa-chart-line"></i> Exploratory Data Analysis
+        </button>
+        <button onclick="switchSkillTab('digest')" class="skill-tab-btn px-4 py-2.5 rounded-xl font-semibold text-xs sm:text-sm transition-all duration-200 flex items-center gap-2 bg-white text-slate-600 hover:bg-slate-100 hover:text-slate-900 border border-slate-200" data-skill="digest">
+          <i class="fa-solid fa-calendar-day"></i> Daily Focus Digest
+        </button>
+        <button onclick="switchSkillTab('brief')" class="skill-tab-btn px-4 py-2.5 rounded-xl font-semibold text-xs sm:text-sm transition-all duration-200 flex items-center gap-2 bg-white text-slate-600 hover:bg-slate-100 hover:text-slate-900 border border-slate-200" data-skill="brief">
+          <i class="fa-solid fa-briefcase"></i> Meeting Prep Brief
+        </button>
+        <button onclick="switchSkillTab('anomaly')" class="skill-tab-btn px-4 py-2.5 rounded-xl font-semibold text-xs sm:text-sm transition-all duration-200 flex items-center gap-2 bg-white text-slate-600 hover:bg-slate-100 hover:text-slate-900 border border-slate-200" data-skill="anomaly">
+          <i class="fa-solid fa-bell-exclamation"></i> Metrics Anomaly Watch
+        </button>
+        <button onclick="switchSkillTab('stakeholder')" class="skill-tab-btn px-4 py-2.5 rounded-xl font-semibold text-xs sm:text-sm transition-all duration-200 flex items-center gap-2 bg-white text-slate-600 hover:bg-slate-100 hover:text-slate-900 border border-slate-200" data-skill="stakeholder">
+          <i class="fa-solid fa-id-card"></i> Stakeholder Profile Builder
+        </button>
+      </div>
+
+      <!-- TAB CONTENT PANELS -->
+      <div id="skillPanelsContainer" class="bg-white rounded-3xl p-6 sm:p-8 border border-slate-200 shadow-sm min-h-[450px]">
+        
+        <!-- PANEL 1: EDA -->
+        <div id="panel-eda" class="skill-panel space-y-6">
+          <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-4 pb-4 border-b border-slate-100">
+            <div>
+              <span class="text-xs font-mono font-semibold text-indigo-600 bg-indigo-50 px-2.5 py-1 rounded-md">exploratory-data-analyst.md</span>
+              <h3 class="text-xl sm:text-2xl font-bold text-slate-900 mt-2">Exploratory Data Analysis Skill</h3>
+              <p class="text-xs sm:text-sm text-slate-500 mt-1">Embeds senior analyst rigor: hypothesis-first execution, confounding variable checks, and BLUF formatting.</p>
+            </div>
+            <div class="flex flex-wrap items-center gap-2 text-xs">
+              <span class="px-3 py-1 rounded-full bg-slate-100 text-slate-700 font-medium">Input: Python profile.py & CSV</span>
+              <span class="px-3 py-1 rounded-full bg-emerald-50 text-emerald-700 font-medium border border-emerald-200">Output: BLUF Markdown</span>
+            </div>
+          </div>
+
+          <!-- Step-by-Step Interactive Workflow Accordion -->
+          <div>
+            <h4 class="text-sm font-bold text-slate-800 uppercase tracking-wider mb-3 flex items-center gap-2">
+              <i class="fa-solid fa-shoe-prints text-indigo-500"></i> The 6-Step Analytical Methodology
+            </h4>
+            
+            <div class="space-y-2">
+              <!-- Step 1 -->
+              <div class="border border-slate-200 rounded-xl overflow-hidden">
+                <button onclick="toggleAccordion(this)" class="w-full flex items-center justify-between p-3.5 bg-slate-50 hover:bg-slate-100 text-left transition-colors font-medium text-xs sm:text-sm text-slate-800">
+                  <span class="flex items-center gap-2">
+                    <span class="w-6 h-6 rounded-full bg-indigo-600 text-white text-xs flex items-center justify-center font-bold">1</span>
+                    <strong>Frame the Question Before Touching Data</strong>
+                  </span>
+                  <i class="fa-solid fa-chevron-down text-xs text-slate-400 transition-transform"></i>
+                </button>
+                <div class="accordion-content hidden p-4 text-xs sm:text-sm text-slate-600 space-y-2 border-t border-slate-200 bg-white">
+                  <p>Identify the exact business decision the analysis will inform and who is making it. Before writing queries, inspect internal context docs (such as <code class="text-indigo-600 font-semibold">Metrics Definitions</code>) to prevent metric definition drift (e.g., confusing <em>order-date</em> with <em>settlement-date</em>).</p>
+                </div>
+              </div>
+
+              <!-- Step 2 -->
+              <div class="border border-slate-200 rounded-xl overflow-hidden">
+                <button onclick="toggleAccordion(this)" class="w-full flex items-center justify-between p-3.5 bg-slate-50 hover:bg-slate-100 text-left transition-colors font-medium text-xs sm:text-sm text-slate-800">
+                  <span class="flex items-center gap-2">
+                    <span class="w-6 h-6 rounded-full bg-indigo-600 text-white text-xs flex items-center justify-center font-bold">2</span>
+                    <strong>Profile Mechanically Before Theorizing</strong>
+                  </span>
+                  <i class="fa-solid fa-chevron-down text-xs text-slate-400 transition-transform"></i>
+                </button>
+                <div class="accordion-content hidden p-4 text-xs sm:text-sm text-slate-600 space-y-2 border-t border-slate-200 bg-white">
+                  <p>Execute the companion Python profiling script on the dataset:</p>
+                  <pre class="bg-slate-900 text-emerald-400 p-2.5 rounded-lg text-xs overflow-x-auto">python3 ~/.claude/skills/exploratory-data-analyst/scripts/profile.py &lt;path-to-csv&gt;</pre>
+                  <p>Inspect row/column counts, missingness, duplicates, numeric distributions (IQR outliers), and date columns. <strong>Critical:</strong> Explicitly verify date parsing because Pandas often loads dates as raw object strings. Evaluate missingness non-randomly (e.g., dropped tracking events).</p>
+                </div>
+              </div>
+
+              <!-- Step 3 -->
+              <div class="border border-slate-200 rounded-xl overflow-hidden">
+                <button onclick="toggleAccordion(this)" class="w-full flex items-center justify-between p-3.5 bg-slate-50 hover:bg-slate-100 text-left transition-colors font-medium text-xs sm:text-sm text-slate-800">
+                  <span class="flex items-center gap-2">
+                    <span class="w-6 h-6 rounded-full bg-indigo-600 text-white text-xs flex items-center justify-center font-bold">3</span>
+                    <strong>Investigate Hypothesis-First & Check Confounds</strong>
+                  </span>
+                  <i class="fa-solid fa-chevron-down text-xs text-slate-400 transition-transform"></i>
+                </button>
+                <div class="accordion-content hidden p-4 text-xs sm:text-sm text-slate-600 space-y-2 border-t border-slate-200 bg-white">
+                  <p>Formulate specific, falsifiable hypotheses. Select cuts of data explicitly designed to <em>disprove</em> the hypothesis. Always check for confounding variables (such as Simpson's Paradox or mix shifts across marketing acquisition channels). Rigorously distinguish between observational correlation and causal evidence.</p>
+                </div>
+              </div>
+
+              <!-- Step 4 -->
+              <div class="border border-slate-200 rounded-xl overflow-hidden">
+                <button onclick="toggleAccordion(this)" class="w-full flex items-center justify-between p-3.5 bg-slate-50 hover:bg-slate-100 text-left transition-colors font-medium text-xs sm:text-sm text-slate-800">
+                  <span class="flex items-center gap-2">
+                    <span class="w-6 h-6 rounded-full bg-indigo-600 text-white text-xs flex items-center justify-center font-bold">4</span>
+                    <strong>Quantify in Concrete Business Terms</strong>
+                  </span>
+                  <i class="fa-solid fa-chevron-down text-xs text-slate-400 transition-transform"></i>
+                </button>
+                <div class="accordion-content hidden p-4 text-xs sm:text-sm text-slate-600 space-y-2 border-t border-slate-200 bg-white">
+                  <p>Translate statistical variance into real-world business impact (e.g., <em>“worth ~$420k annualized”</em> or <em>“impacts 1,400 collectors per month”</em>). Transparently flag small sample sizes (<code class="bg-amber-100 text-amber-800 px-1 rounded font-mono">n &lt; 50</code>) as directional noise rather than statistically definitive conclusions.</p>
+                </div>
+              </div>
+
+              <!-- Step 5 -->
+              <div class="border border-slate-200 rounded-xl overflow-hidden">
+                <button onclick="toggleAccordion(this)" class="w-full flex items-center justify-between p-3.5 bg-slate-50 hover:bg-slate-100 text-left transition-colors font-medium text-xs sm:text-sm text-slate-800">
+                  <span class="flex items-center gap-2">
+                    <span class="w-6 h-6 rounded-full bg-indigo-600 text-white text-xs flex items-center justify-center font-bold">5</span>
+                    <strong>Write Findings BLUF-Style (Bottom-Line-Up-Front)</strong>
+                  </span>
+                  <i class="fa-solid fa-chevron-down text-xs text-slate-400 transition-transform"></i>
+                </button>
+                <div class="accordion-content hidden p-4 text-xs sm:text-sm text-slate-600 space-y-3 border-t border-slate-200 bg-white">
+                  <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs">
+                    <div class="bg-slate-50 p-2.5 rounded-lg border border-slate-200">
+                      <strong class="text-indigo-600 block mb-0.5">1. Answer</strong>
+                      One direct sentence answering the core decision question.
+                    </div>
+                    <div class="bg-slate-50 p-2.5 rounded-lg border border-slate-200">
+                      <strong class="text-indigo-600 block mb-0.5">2. Evidence</strong>
+                      2 to 4 key quantitative metrics carrying the argument.
+                    </div>
+                    <div class="bg-slate-50 p-2.5 rounded-lg border border-slate-200">
+                      <strong class="text-indigo-600 block mb-0.5">3. Caveats</strong>
+                      Sample bounds, channel shifts, and data limitations.
+                    </div>
+                    <div class="bg-slate-50 p-2.5 rounded-lg border border-slate-200">
+                      <strong class="text-indigo-600 block mb-0.5">4. Recommendation</strong>
+                      Concrete, evidence-backed action item for stakeholders.
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Step 6 -->
+              <div class="border border-slate-200 rounded-xl overflow-hidden">
+                <button onclick="toggleAccordion(this)" class="w-full flex items-center justify-between p-3.5 bg-slate-50 hover:bg-slate-100 text-left transition-colors font-medium text-xs sm:text-sm text-slate-800">
+                  <span class="flex items-center gap-2">
+                    <span class="w-6 h-6 rounded-full bg-indigo-600 text-white text-xs flex items-center justify-center font-bold">6</span>
+                    <strong>Visualize Selectively & Standardize</strong>
+                  </span>
+                  <i class="fa-solid fa-chevron-down text-xs text-slate-400 transition-transform"></i>
+                </button>
+                <div class="accordion-content hidden p-4 text-xs sm:text-sm text-slate-600 space-y-2 border-t border-slate-200 bg-white">
+                  <p>Generate charts only when visual rendering conveys complex distributions or cohort transitions better than a clean markdown table. Always check if the environment has loaded the specialized <code class="text-indigo-600">dataviz.md</code> skill to preserve palette and typographic standards.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Non-Negotiable Rules Callout -->
+          <div class="bg-rose-50 border border-rose-200 rounded-2xl p-4 sm:p-5">
+            <h4 class="text-rose-900 font-bold text-sm flex items-center gap-2 mb-2">
+              <i class="fa-solid fa-shield-halved text-rose-600"></i> Non-Negotiable Rules for EDA Analysts
+            </h4>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-2 text-xs text-rose-800">
+              <div class="flex items-start gap-2">
+                <i class="fa-solid fa-circle-xmark text-rose-500 mt-0.5"></i>
+                <span>Never report aggregate metrics without verifying underlying audience definitions.</span>
+              </div>
+              <div class="flex items-start gap-2">
+                <i class="fa-solid fa-circle-xmark text-rose-500 mt-0.5"></i>
+                <span>Never let headline numbers stand without testing plausible confounds (e.g. channel mix).</span>
+              </div>
+              <div class="flex items-start gap-2">
+                <i class="fa-solid fa-circle-xmark text-rose-500 mt-0.5"></i>
+                <span>Never present observational correlation as causal proof for strategic choices.</span>
+              </div>
+              <div class="flex items-start gap-2">
+                <i class="fa-solid fa-circle-xmark text-rose-500 mt-0.5"></i>
+                <span>Never bury conclusion takeaways at the end of a long narrative walkthrough.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- PANEL 2: DAILY DIGEST -->
+        <div id="panel-digest" class="skill-panel hidden space-y-6">
+          <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-4 pb-4 border-b border-slate-100">
+            <div>
+              <span class="text-xs font-mono font-semibold text-indigo-600 bg-indigo-50 px-2.5 py-1 rounded-md">daily-digest.md</span>
+              <h3 class="text-xl sm:text-2xl font-bold text-slate-900 mt-2">Daily Focus Digest Skill</h3>
+              <p class="text-xs sm:text-sm text-slate-500 mt-1">Cross-references Calendar, Gmail, and Google Drive to output a prioritized daily action plan.</p>
+            </div>
+            <div class="flex flex-wrap items-center gap-2 text-xs">
+              <span class="px-3 py-1 rounded-full bg-slate-100 text-slate-700 font-medium">Triggers: "daily digest", "plan my day"</span>
+              <span class="px-3 py-1 rounded-full bg-indigo-50 text-indigo-700 font-medium">Cron: 7:00 AM Daily</span>
+            </div>
+          </div>
+
+          <!-- Interactive Hover Reveals for MCP Tool Invocation -->
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+            <!-- Calendar Card -->
+            <div class="p-4 rounded-2xl bg-slate-50 border border-slate-200 hover:border-indigo-400 hover:bg-white transition-all group">
+              <div class="flex items-center gap-2 mb-2 text-indigo-600">
+                <i class="fa-solid fa-calendar text-base"></i>
+                <h4 class="font-bold text-sm text-slate-900">1. Calendar Lookup</h4>
+              </div>
+              <p class="text-xs text-slate-600 mb-2">Queries day events (00:00 - 24:00) in explicit local IANA timeZone, plus multi-day outlook.</p>
+              <div class="text-[11px] font-mono bg-slate-900 text-slate-200 p-2 rounded-lg break-all">
+                mcp__claude_ai_Google_Calendar__list_events(startTime, endTime, timeZone, orderBy: "startTime")
+              </div>
+            </div>
+
+            <!-- Gmail Card -->
+            <div class="p-4 rounded-2xl bg-slate-50 border border-slate-200 hover:border-indigo-400 hover:bg-white transition-all group">
+              <div class="flex items-center gap-2 mb-2 text-indigo-600">
+                <i class="fa-solid fa-envelope-open-text text-base"></i>
+                <h4 class="font-bold text-sm text-slate-900">2. Gmail Reply Heuristic</h4>
+              </div>
+              <p class="text-xs text-slate-600 mb-2">Filters trailing 7-day threads where last sender ≠ user, dropping no-reply alerts.</p>
+              <div class="text-[11px] font-mono bg-slate-900 text-slate-200 p-2 rounded-lg break-all">
+                mcp__claude_ai_Gmail__search_threads(query: "in:inbox newer_than:7d", pageSize: 20)
+              </div>
+            </div>
+
+            <!-- Drive Card -->
+            <div class="p-4 rounded-2xl bg-slate-50 border border-slate-200 hover:border-indigo-400 hover:bg-white transition-all group">
+              <div class="flex items-center gap-2 mb-2 text-indigo-600">
+                <i class="fa-brands fa-google-drive text-base"></i>
+                <h4 class="font-bold text-sm text-slate-900">3. Drive Active Drafts</h4>
+              </div>
+              <p class="text-xs text-slate-600 mb-2">Scans metadata frontmatter for active project documents requiring blocking decisions.</p>
+              <div class="text-[11px] font-mono bg-slate-900 text-slate-200 p-2 rounded-lg break-all">
+                query: "fullText contains 'status: \"Draft\"' or fullText contains 'status: \"In Progress\"'"
+              </div>
+            </div>
+          </div>
+
+          <!-- Output Preview Container -->
+          <div class="bg-slate-900 text-slate-100 rounded-2xl p-5 border border-slate-800 text-xs font-mono space-y-3">
+            <div class="flex items-center justify-between text-slate-400 pb-2 border-b border-slate-800">
+              <span>Expected Output Markdown Structure</span>
+              <span class="text-indigo-400"># Today's Focus</span>
+            </div>
+            <p class="text-amber-300 font-semibold">**Top priority:** Finalize M1 repeat-purchase cohort slides for 2pm Exec Sync</p>
+            <div class="space-y-1 text-slate-300">
+              <div class="text-indigo-300 font-bold">### Meetings Today: [Time | Meeting | Prep Needed]</div>
+              <div class="text-indigo-300 font-bold">### Needs Your Reply: [Thread | Age | Why It Matters]</div>
+              <div class="text-indigo-300 font-bold">### Project Items in Motion: [Doc | Owner | Status | Open Item]</div>
+              <div class="text-indigo-300 font-bold">### Coming Up This Week: [Day | Meeting | Start Prep Today If]</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- PANEL 3: MEETING PREP BRIEF -->
+        <div id="panel-brief" class="skill-panel hidden space-y-6">
+          <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-4 pb-4 border-b border-slate-100">
+            <div>
+              <span class="text-xs font-mono font-semibold text-indigo-600 bg-indigo-50 px-2.5 py-1 rounded-md">meeting-prep-brief.md</span>
+              <h3 class="text-xl sm:text-2xl font-bold text-slate-900 mt-2">Meeting Prep Brief Skill</h3>
+              <p class="text-xs sm:text-sm text-slate-500 mt-1">Synthesizes a one-page preparation brief for a single upcoming meeting via multi-channel context.</p>
+            </div>
+            <div class="flex flex-wrap items-center gap-2 text-xs">
+              <span class="px-3 py-1 rounded-full bg-slate-100 text-slate-700 font-medium">Triggers: "prep me for X", "1:1 with X"</span>
+              <span class="px-3 py-1 rounded-full bg-purple-50 text-purple-700 font-medium">Output: Brief Markdown</span>
+            </div>
+          </div>
+
+          <!-- Execution Flow Interactive Stepper -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 text-xs">
+            <div class="bg-slate-50 p-4 rounded-xl border border-slate-200">
+              <span class="w-6 h-6 rounded-md bg-indigo-600 text-white font-bold flex items-center justify-center mb-2">1</span>
+              <strong class="text-slate-900 block mb-1">Calendar Search</strong>
+              <p class="text-slate-600">Locates the nearest upcoming instance to extract attendees, description, and exact timestamp.</p>
+            </div>
+            <div class="bg-slate-50 p-4 rounded-xl border border-slate-200">
+              <span class="w-6 h-6 rounded-md bg-indigo-600 text-white font-bold flex items-center justify-center mb-2">2</span>
+              <strong class="text-slate-900 block mb-1">Org Chart Scan</strong>
+              <p class="text-slate-600">Resolves roles by scanning Leadership, Analytics, and Product tables before marking unlisted.</p>
+            </div>
+            <div class="bg-slate-50 p-4 rounded-xl border border-slate-200">
+              <span class="w-6 h-6 rounded-md bg-indigo-600 text-white font-bold flex items-center justify-center mb-2">3</span>
+              <strong class="text-slate-900 block mb-1">Keyword Retrieval</strong>
+              <p class="text-slate-600">Extracts 2-4 domain keywords to pull relevant active Drive files (prioritizing Draft/In Progress).</p>
+            </div>
+            <div class="bg-slate-50 p-4 rounded-xl border border-slate-200">
+              <span class="w-6 h-6 rounded-md bg-indigo-600 text-white font-bold flex items-center justify-center mb-2">4</span>
+              <strong class="text-slate-900 block mb-1">14-Day Threads</strong>
+              <p class="text-slate-600">Queries trailing 14-day exchange history to surface unresolved questions and talking points.</p>
+            </div>
+          </div>
+
+          <!-- Brief Table Schema Visualization -->
+          <div class="bg-white rounded-2xl border border-slate-200 p-4 space-y-2">
+            <h4 class="font-bold text-xs uppercase tracking-wider text-slate-700">Synthesized Brief Output Components</h4>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-3 text-xs">
+              <div class="p-3 bg-slate-50 rounded-lg border border-slate-200">
+                <span class="font-semibold text-indigo-600 block mb-1"><i class="fa-solid fa-users mr-1"></i> Attendees Table</span>
+                <span>Name, Role resolved from Org Chart, and owned operational domain.</span>
+              </div>
+              <div class="p-3 bg-slate-50 rounded-lg border border-slate-200">
+                <span class="font-semibold text-indigo-600 block mb-1"><i class="fa-solid fa-file-lines mr-1"></i> Relevant Docs</span>
+                <span>Title, Approval Status (Draft/In Progress), and one-line key takeaway.</span>
+              </div>
+              <div class="p-3 bg-slate-50 rounded-lg border border-slate-200">
+                <span class="font-semibold text-indigo-600 block mb-1"><i class="fa-solid fa-comments mr-1"></i> Suggested Talking Points</span>
+                <span>Actionable bullets derived directly from blocking items in drafts or emails.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- PANEL 4: ANOMALY WATCH -->
+        <div id="panel-anomaly" class="skill-panel hidden space-y-6">
+          <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-4 pb-4 border-b border-slate-100">
+            <div>
+              <span class="text-xs font-mono font-semibold text-indigo-600 bg-indigo-50 px-2.5 py-1 rounded-md">metrics-anomaly-watch.md</span>
+              <h3 class="text-xl sm:text-2xl font-bold text-slate-900 mt-2">Metrics Anomaly Watch Skill</h3>
+              <p class="text-xs sm:text-sm text-slate-500 mt-1">Monitors monthly business CSVs against organizational guardrails to catch material inflection points.</p>
+            </div>
+            <div class="flex flex-wrap items-center gap-2 text-xs">
+              <span class="px-3 py-1 rounded-full bg-slate-100 text-slate-700 font-medium">Triggers: "check for anomalies", "red flags"</span>
+              <span class="px-3 py-1 rounded-full bg-rose-50 text-rose-700 font-medium">Strict 17-Col Schema</span>
+            </div>
+          </div>
+
+          <!-- Deep Dive Interactive Concept: Baseline vs True Anomaly -->
+          <div class="bg-gradient-to-r from-indigo-50 to-slate-50 p-5 rounded-2xl border border-indigo-100">
+            <h4 class="font-bold text-slate-900 text-sm flex items-center gap-2 mb-2">
+              <i class="fa-solid fa-chart-line-up text-indigo-600"></i> Core Logic: Status-Quo Baseline vs. Trend Acceleration
+            </h4>
+            <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+              The skill does not flag established, long-term trends as anomalies. For instance, if Bigstart Collectibles’ M3 retention rate has steadily declined over 18 months, that gradual decline is the <em>established baseline</em>. An anomaly is flagged <strong>only if the rate of decline accelerates</strong> relative to its trailing 3-month average.
+            </p>
+          </div>
+
+          <!-- 17-Column Schema Interactive Viewer -->
+          <div class="space-y-2">
+            <div class="flex items-center justify-between">
+              <span class="text-xs font-bold text-slate-700 uppercase tracking-wider">Required 17-Column CSV Schema</span>
+              <button onclick="copySchemaText()" class="text-xs text-indigo-600 hover:text-indigo-800 font-semibold flex items-center gap-1">
+                <i class="fa-regular fa-copy"></i> Copy Headers
+              </button>
+            </div>
+            <div id="schemaBox" class="bg-slate-900 text-slate-200 p-3 rounded-xl text-xs font-mono overflow-x-auto whitespace-nowrap">
+              month, status, sessions, orders, revenue_usd, aov_usd, new_customers, paid_new_customers, paid_marketing_spend_usd, paid_cac_usd, conversion_rate_pct, repeat_order_share_pct, m1_second_purchase_pct, m3_second_purchase_pct, gross_margin_pct, refund_rate_pct, email_opt_in_pct
+            </div>
+            <div class="flex items-center gap-2 text-xs text-amber-700 bg-amber-50 p-2.5 rounded-lg border border-amber-200">
+              <i class="fa-solid fa-triangle-exclamation"></i>
+              <span><strong>Crucial Filter Rule:</strong> Must execute <code class="bg-amber-100 px-1 py-0.5 rounded font-mono">status == 'Actual'</code> to prevent poisoning actual trends with forward forecast Plan rows!</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- PANEL 5: STAKEHOLDER PROFILE BUILDER -->
+        <div id="panel-stakeholder" class="skill-panel hidden space-y-6">
+          <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-4 pb-4 border-b border-slate-100">
+            <div>
+              <span class="text-xs font-mono font-semibold text-indigo-600 bg-indigo-50 px-2.5 py-1 rounded-md">stakeholder-profile-builder.md</span>
+              <h3 class="text-xl sm:text-2xl font-bold text-slate-900 mt-2">Stakeholder Profile Builder Skill</h3>
+              <p class="text-xs sm:text-sm text-slate-500 mt-1">Maintains persistent stakeholder context notes inside the vault archive (<code class="text-xs text-indigo-600">03_archives/Stakeholder &lt;Name&gt;.md</code>).</p>
+            </div>
+            <div class="flex flex-wrap items-center gap-2 text-xs">
+              <span class="px-3 py-1 rounded-full bg-slate-100 text-slate-700 font-medium">Triggers: "build stakeholder profile for X"</span>
+              <span class="px-3 py-1 rounded-full bg-teal-50 text-teal-700 font-medium">In-Place File Update</span>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <!-- Execution Logic -->
+            <div class="space-y-3">
+              <h4 class="font-bold text-xs uppercase tracking-wider text-slate-700">Execution Logic & In-Place Merge</h4>
+              
+              <div class="p-3 bg-slate-50 rounded-xl border border-slate-200 text-xs space-y-1.5">
+                <span class="font-semibold text-slate-900 block"><i class="fa-solid fa-arrows-rotate text-indigo-500 mr-1"></i> In-Place Update Check</span>
+                <p class="text-slate-600">Checks if <code class="text-indigo-600">03_archives/Stakeholder &lt;Name&gt;.md</code> exists. If present, it updates in-place instead of creating cluttering duplicate files.</p>
+              </div>
+
+              <div class="p-3 bg-slate-50 rounded-xl border border-slate-200 text-xs space-y-1.5">
+                <span class="font-semibold text-slate-900 block"><i class="fa-solid fa-sitemap text-indigo-500 mr-1"></i> Org Chart Resolution</span>
+                <p class="text-slate-600">Locates exact department, title, and team alignment across the 3 core tables.</p>
+              </div>
+
+              <div class="p-3 bg-slate-50 rounded-xl border border-slate-200 text-xs space-y-1.5">
+                <span class="font-semibold text-slate-900 block"><i class="fa-solid fa-file-signature text-indigo-500 mr-1"></i> Document Ownership</span>
+                <p class="text-slate-600">Executes Drive search for <code class="text-indigo-600">owner: "&lt;Name&gt;"</code> to identify assets and metric dashboards owned.</p>
+              </div>
+
+              <div class="p-3 bg-slate-50 rounded-xl border border-slate-200 text-xs space-y-1.5">
+                <span class="font-semibold text-slate-900 block"><i class="fa-solid fa-chart-pie text-indigo-500 mr-1"></i> Communication Style & Cadence</span>
+                <p class="text-slate-600">Evaluates 2-3 representative Gmail messages from the past 90 days to determine conciseness and request patterns.</p>
+              </div>
+            </div>
+
+            <!-- Vault Note Schema Preview -->
+            <div class="bg-slate-900 text-slate-200 rounded-2xl p-4 border border-slate-800 text-xs font-mono space-y-2 overflow-y-auto max-h-96">
+              <div class="text-indigo-400 font-bold border-b border-slate-800 pb-1">YAML Frontmatter & Body Format</div>
+              <pre class="text-slate-300">---
+title: "Stakeholder &lt;Name&gt;"
+date: 2026-10-29
+owner: "You"
+status: "Approved"
+type: "Stakeholder Profile"
+confidentiality: "Internal"
+tags: [stakeholder, people]
+---
+
+# &lt;Name&gt;
+## Role
+&lt;Role, team, and primary responsibility from Org Chart&gt;
+
+## What They Own
+&lt;Docs, metrics, or initiatives where they are named owner&gt;
+
+## How We Collaborate
+&lt;Meeting cadence + communication style from Gmail&gt;
+
+## Recent History
+&lt;2-3 dated bullets summarizing asks or decisions over trailing 90 days&gt;</pre>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION 4: COMPARATIVE MATRIX & FILTERABLE ARCHITECTURE -->
+    <section class="bg-white rounded-3xl p-6 sm:p-8 border border-slate-200 shadow-sm space-y-4">
+      <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-100 pb-4">
+        <div>
+          <span class="text-xs font-bold tracking-wider text-indigo-600 uppercase">Architecture Alignment</span>
+          <h2 class="text-2xl font-bold text-slate-900 flex items-center gap-2">
+            <i class="fa-solid fa-table-cells text-indigo-600"></i> Skill File Comparative Matrix
+          </h2>
+        </div>
+        <div class="relative">
+          <i class="fa-solid fa-magnifying-glass absolute left-3 top-2.5 text-xs text-slate-400"></i>
+          <input type="text" id="matrixSearch" onkeyup="filterMatrix()" placeholder="Filter skills or tools..." 
+                 class="pl-8 pr-3 py-1.5 rounded-xl border border-slate-200 text-xs focus:outline-none focus:ring-2 focus:ring-indigo-500 w-48 sm:w-64">
+        </div>
+      </div>
+
+      <div class="overflow-x-auto">
+        <table class="w-full text-left text-xs sm:text-sm border-collapse" id="matrixTable">
+          <thead>
+            <tr class="bg-slate-50 text-slate-600 border-b border-slate-200">
+              <th class="py-3 px-4 font-semibold">Skill File Name</th>
+              <th class="py-3 px-4 font-semibold">Primary Purpose</th>
+              <th class="py-3 px-4 font-semibold">Required MCP Tools / Inputs</th>
+              <th class="py-3 px-4 font-semibold">Primary Output Artifact</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-slate-100 text-slate-700">
+            <tr class="hover:bg-indigo-50/40 transition-colors">
+              <td class="py-3.5 px-4 font-mono font-bold text-indigo-600">exploratory-data-analyst.md</td>
+              <td class="py-3.5 px-4">Executes hypothesis-driven, confound-checked exploratory analysis on datasets.</td>
+              <td class="py-3.5 px-4">Python script (<code class="font-mono text-[11px] bg-slate-100 px-1 py-0.5 rounded">profile.py</code>), raw CSV, optional dataviz skill</td>
+              <td class="py-3.5 px-4 font-medium text-slate-900">BLUF-style Markdown report (Answer, Evidence, Caveats, Recommendation)</td>
+            </tr>
+            <tr class="hover:bg-indigo-50/40 transition-colors">
+              <td class="py-3.5 px-4 font-mono font-bold text-indigo-600">daily-digest.md</td>
+              <td class="py-3.5 px-4">Generates a daily focus agenda and weekly context based on urgency and prep needs.</td>
+              <td class="py-3.5 px-4">Google Calendar, Gmail, Google Drive</td>
+              <td class="py-3.5 px-4 font-medium text-slate-900">Categorized same-chat Markdown tables (Meetings, Replies, Projects, Upcoming)</td>
+            </tr>
+            <tr class="hover:bg-indigo-50/40 transition-colors">
+              <td class="py-3.5 px-4 font-mono font-bold text-indigo-600">meeting-prep-brief.md</td>
+              <td class="py-3.5 px-4">Synthesizes a one-page preparation brief for a single named upcoming meeting.</td>
+              <td class="py-3.5 px-4">Google Calendar, Gmail, Google Drive (Org Chart, keyword docs)</td>
+              <td class="py-3.5 px-4 font-medium text-slate-900">Brief sheet containing Attendees, Relevant Docs, Email context, and Talking Points</td>
+            </tr>
+            <tr class="hover:bg-indigo-50/40 transition-colors">
+              <td class="py-3.5 px-4 font-mono font-bold text-indigo-600">metrics-anomaly-watch.md</td>
+              <td class="py-3.5 px-4">Flags material inflection points and guardrail breaches in business CSVs.</td>
+              <td class="py-3.5 px-4">Google Drive (<code class="font-mono text-[11px] bg-slate-100 px-1 py-0.5 rounded">monthly_business_metrics.csv</code>, Metrics Definitions doc)</td>
+              <td class="py-3.5 px-4 font-medium text-slate-900">Anomaly flag table accompanied by a one-sentence business impact assessment</td>
+            </tr>
+            <tr class="hover:bg-indigo-50/40 transition-colors">
+              <td class="py-3.5 px-4 font-mono font-bold text-indigo-600">stakeholder-profile-builder.md</td>
+              <td class="py-3.5 px-4">Creates or updates a stakeholder context profile note in the vault archive.</td>
+              <td class="py-3.5 px-4">Google Calendar, Gmail, Google Drive, filesystem write</td>
+              <td class="py-3.5 px-4 font-medium text-slate-900">Formatted Markdown file written to <code class="font-mono text-[11px] bg-slate-100 px-1 py-0.5 rounded">03_archives/Stakeholder &lt;Name&gt;.md</code></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- SECTION 5: OPERATIONAL GOTCHAS & TROUBLESHOOTING (Interactive Filter/Cards) -->
+    <section id="gotchas-troubleshooting" class="space-y-4">
+      <div class="border-b border-slate-200 pb-3 flex flex-col sm:flex-row sm:items-end justify-between gap-2">
+        <div>
+          <span class="text-xs font-bold tracking-wider text-rose-600 uppercase">Real-World Execution Guardrails</span>
+          <h2 class="text-2xl font-bold text-slate-900 flex items-center gap-2">
+            <i class="fa-solid fa-triangle-exclamation text-rose-600"></i> Common Gotchas & Troubleshooting Rules
+          </h2>
+        </div>
+        <div class="flex items-center space-x-1 bg-slate-100 p-1 rounded-xl text-xs font-semibold" id="gotchaFilters">
+          <button onclick="filterGotchas('all')" class="gotcha-filter active px-3 py-1.5 rounded-lg bg-white shadow-sm text-slate-800">All</button>
+          <button onclick="filterGotchas('gmail')" class="gotcha-filter px-3 py-1.5 rounded-lg text-slate-600 hover:text-slate-900">Gmail</button>
+          <button onclick="filterGotchas('drive')" class="gotcha-filter px-3 py-1.5 rounded-lg text-slate-600 hover:text-slate-900">Drive</button>
+          <button onclick="filterGotchas('calendar')" class="gotcha-filter px-3 py-1.5 rounded-lg text-slate-600 hover:text-slate-900">Calendar</button>
+          <button onclick="filterGotchas('data')" class="gotcha-filter px-3 py-1.5 rounded-lg text-slate-600 hover:text-slate-900">Data Analytics</button>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4" id="gotchasGrid">
+        
+        <!-- Gmail Gotcha 1 -->
+        <div class="gotcha-card bg-white p-5 rounded-2xl border border-slate-200 hover:border-rose-300 shadow-sm space-y-2" data-cat="gmail">
+          <div class="flex items-center justify-between">
+            <span class="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded bg-rose-50 text-rose-700">Gmail Filter</span>
+            <i class="fa-solid fa-envelope text-slate-400"></i>
+          </div>
+          <h4 class="font-bold text-slate-900 text-sm">Unread Status vs. Awaiting Reply</h4>
+          <p class="text-xs text-slate-600 leading-relaxed">
+            Avoid using <code class="bg-slate-100 px-1 py-0.5 rounded font-mono text-slate-800">is:unread</code> to surface action items. Unread status captures newsletters and junk while missing read-but-unanswered emails. Instead, use the last-sender heuristic (<code class="bg-slate-100 px-1 py-0.5 rounded font-mono text-slate-800">newer_than:7d</code> where last sender ≠ user).
+          </p>
+        </div>
+
+        <!-- Gmail Gotcha 2 -->
+        <div class="gotcha-card bg-white p-5 rounded-2xl border border-slate-200 hover:border-rose-300 shadow-sm space-y-2" data-cat="gmail">
+          <div class="flex items-center justify-between">
+            <span class="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded bg-rose-50 text-rose-700">Gmail Filter</span>
+            <i class="fa-solid fa-ban text-slate-400"></i>
+          </div>
+          <h4 class="font-bold text-slate-900 text-sm">Automated Sender Pollution</h4>
+          <p class="text-xs text-slate-600 leading-relaxed">
+            Always explicitly drop automated notification senders (<code class="bg-slate-100 px-1 py-0.5 rounded font-mono text-slate-800">no-reply@</code>, <code class="bg-slate-100 px-1 py-0.5 rounded font-mono text-slate-800">accounts.google.com</code>, GitHub bots) to prevent zero-value notifications from cluttering focus digests.
+          </p>
+        </div>
+
+        <!-- Drive Gotcha 1 -->
+        <div class="gotcha-card bg-white p-5 rounded-2xl border border-slate-200 hover:border-rose-300 shadow-sm space-y-2" data-cat="drive">
+          <div class="flex items-center justify-between">
+            <span class="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded bg-amber-50 text-amber-800">Google Drive</span>
+            <i class="fa-brands fa-google-drive text-slate-400"></i>
+          </div>
+          <h4 class="font-bold text-slate-900 text-sm">Escaped Quotes in Frontmatter</h4>
+          <p class="text-xs text-slate-600 leading-relaxed">
+            YAML frontmatter status values are quoted (<code class="bg-slate-100 px-1 py-0.5 rounded font-mono text-slate-800">status: "Draft"</code>). Drive searches must escape inner quotes:
+            <code class="block bg-slate-900 text-amber-300 p-1.5 rounded mt-1 font-mono text-[10px] overflow-x-auto">query: "fullText contains 'status: \"Draft\"'"</code>
+            Omitting escapes silently returns zero records!
+          </p>
+        </div>
+
+        <!-- Drive Gotcha 2 -->
+        <div class="gotcha-card bg-white p-5 rounded-2xl border border-slate-200 hover:border-rose-300 shadow-sm space-y-2" data-cat="drive">
+          <div class="flex items-center justify-between">
+            <span class="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded bg-amber-50 text-amber-800">Google Drive</span>
+            <i class="fa-solid fa-sitemap text-slate-400"></i>
+          </div>
+          <h4 class="font-bold text-slate-900 text-sm">Org Chart Multi-Table Parsing</h4>
+          <p class="text-xs text-slate-600 leading-relaxed">
+            Org Chart documents partition staff across <em>Leadership</em>, <em>Analytics team</em>, and <em>Core product partners</em>. The AI agent must scan all three tables before marking an attendee unlisted. Also gracefully handle missing email history rather than crashing execution.
+          </p>
+        </div>
+
+        <!-- Calendar Gotcha 1 -->
+        <div class="gotcha-card bg-white p-5 rounded-2xl border border-slate-200 hover:border-rose-300 shadow-sm space-y-2" data-cat="calendar">
+          <div class="flex items-center justify-between">
+            <span class="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded bg-blue-50 text-blue-700">Calendar</span>
+            <i class="fa-solid fa-globe text-slate-400"></i>
+          </div>
+          <h4 class="font-bold text-slate-900 text-sm">Explicit TimeZone Parameters</h4>
+          <p class="text-xs text-slate-600 leading-relaxed">
+            Always supply an explicit IANA timeZone string (e.g., <code class="bg-slate-100 px-1 py-0.5 rounded font-mono text-slate-800">America/New_York</code>). Failing to do so causes MCP connectors to default to UTC, shifting boundaries and returning meetings on the wrong day.
+          </p>
+        </div>
+
+        <!-- Calendar Gotcha 2 -->
+        <div class="gotcha-card bg-white p-5 rounded-2xl border border-slate-200 hover:border-rose-300 shadow-sm space-y-2" data-cat="calendar">
+          <div class="flex items-center justify-between">
+            <span class="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded bg-blue-50 text-blue-700">Calendar</span>
+            <i class="fa-solid fa-repeat text-slate-400"></i>
+          </div>
+          <h4 class="font-bold text-slate-900 text-sm">Recurring Series Event IDs</h4>
+          <p class="text-xs text-slate-600 leading-relaxed">
+            Recurring event instances return compound IDs formatted as <code class="bg-slate-100 px-1 py-0.5 rounded font-mono text-slate-800">&lt;seriesId&gt;_&lt;timestamp&gt;</code>. Never deduplicate these entries, as each represents an active, independent meeting instance.
+          </p>
+        </div>
+
+        <!-- Data Gotcha 1 -->
+        <div class="gotcha-card bg-white p-5 rounded-2xl border border-slate-200 hover:border-rose-300 shadow-sm space-y-2" data-cat="data">
+          <div class="flex items-center justify-between">
+            <span class="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded bg-purple-50 text-purple-700">Analytics Data</span>
+            <i class="fa-solid fa-filter text-slate-400"></i>
+          </div>
+          <h4 class="font-bold text-slate-900 text-sm">Actual vs. Plan Mixing</h4>
+          <p class="text-xs text-slate-600 leading-relaxed">
+            Business CSVs combine past Actual results with Plan forecasts. Always explicitly filter <code class="bg-slate-100 px-1 py-0.5 rounded font-mono text-slate-800">status == 'Actual'</code> prior to calculating deltas, otherwise forecast targets will pollute historical trend lines.
+          </p>
+        </div>
+
+        <!-- Data Gotcha 2 -->
+        <div class="gotcha-card bg-white p-5 rounded-2xl border border-slate-200 hover:border-rose-300 shadow-sm space-y-2" data-cat="data">
+          <div class="flex items-center justify-between">
+            <span class="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded bg-purple-50 text-purple-700">Analytics Data</span>
+            <i class="fa-solid fa-arrow-up-right-dots text-slate-400"></i>
+          </div>
+          <h4 class="font-bold text-slate-900 text-sm">Metric Directionality Rules</h4>
+          <p class="text-xs text-slate-600 leading-relaxed">
+            Directional value is metric-specific. Increases in CAC or refund rates are negative/adverse, whereas increases in gross margin or repeat order share are positive. Guardrails must encode this polar logic.
+          </p>
+        </div>
+
+        <!-- Data Gotcha 3 -->
+        <div class="gotcha-card bg-white p-5 rounded-2xl border border-slate-200 hover:border-rose-300 shadow-sm space-y-2" data-cat="data">
+          <div class="flex items-center justify-between">
+            <span class="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded bg-purple-50 text-purple-700">Analytics Data</span>
+            <i class="fa-solid fa-scale-balanced text-slate-400"></i>
+          </div>
+          <h4 class="font-bold text-slate-900 text-sm">Correlation vs. Causation Guard</h4>
+          <p class="text-xs text-slate-600 leading-relaxed">
+            Never report observational associations as causal proof for strategic decisions. Always isolate mix shifts (channel shifts, cohort seasonality) and Simpson’s Paradox before certifying a finding.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION 6: ITERATIVE SKILL BUILDING & FUTURE OF THE AI ANALYST -->
+    <section id="future-shift" class="bg-gradient-to-br from-slate-900 via-indigo-950 to-slate-900 rounded-3xl p-6 sm:p-10 text-white shadow-lg space-y-8">
+      <div>
+        <span class="text-xs font-bold tracking-wider text-indigo-400 uppercase">Evolution of the Role</span>
+        <h2 class="text-2xl sm:text-3xl font-extrabold tracking-tight mt-1">
+          The Human-AI Hybrid Analytics Model
+        </h2>
+        <p class="text-xs sm:text-sm text-slate-300 mt-2 max-w-3xl leading-relaxed">
+          The data analyst role is shifting from manual execution (writing boilerplate SQL, copying data across sheets, drafting meeting recaps) to that of an <strong>Architect</strong> who designs, audits, and maintains an enterprise library of AI skills.
+        </p>
+      </div>
+
+      <!-- Iterative Loop Visualizer -->
+      <div class="bg-slate-800/80 p-6 rounded-2xl border border-slate-700">
+        <h3 class="text-sm font-bold text-indigo-300 uppercase tracking-wider mb-4 flex items-center gap-2">
+          <i class="fa-solid fa-arrows-spin text-indigo-400"></i> Continuous Refactoring Lifecycle for Skill Files
+        </h3>
+        
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 text-xs">
+          <div class="bg-slate-900/90 p-4 rounded-xl border border-slate-700 flex flex-col justify-between">
+            <div>
+              <span class="w-7 h-7 rounded-lg bg-indigo-500/20 text-indigo-400 font-bold flex items-center justify-center mb-2">Step 1</span>
+              <strong class="text-white block text-sm mb-1">Generate Initial Template</strong>
+              <p class="text-slate-400">Run an automated skill generator to establish the baseline structure, role, and markdown contracts.</p>
+            </div>
+            <i class="fa-solid fa-arrow-right text-indigo-500 hidden lg:block self-end mt-2"></i>
+          </div>
+
+          <div class="bg-slate-900/90 p-4 rounded-xl border border-slate-700 flex flex-col justify-between">
+            <div>
+              <span class="w-7 h-7 rounded-lg bg-indigo-500/20 text-indigo-400 font-bold flex items-center justify-center mb-2">Step 2</span>
+              <strong class="text-white block text-sm mb-1">Execute on Real Tasks</strong>
+              <p class="text-slate-400">Deploy the skill against real operational requests (e.g. CEO retention inquiries, live morning briefs).</p>
+            </div>
+            <i class="fa-solid fa-arrow-right text-indigo-500 hidden lg:block self-end mt-2"></i>
+          </div>
+
+          <div class="bg-slate-900/90 p-4 rounded-xl border border-slate-700 flex flex-col justify-between">
+            <div>
+              <span class="w-7 h-7 rounded-lg bg-indigo-500/20 text-indigo-400 font-bold flex items-center justify-center mb-2">Step 3</span>
+              <strong class="text-white block text-sm mb-1">Evaluate Output Gaps</strong>
+              <p class="text-slate-400">Audit output for hallucinated metrics, loose summaries, or missing confounding variable evaluations.</p>
+            </div>
+            <i class="fa-solid fa-arrow-right text-indigo-500 hidden lg:block self-end mt-2"></i>
+          </div>
+
+          <div class="bg-slate-900/90 p-4 rounded-xl border border-slate-700 flex flex-col justify-between">
+            <div>
+              <span class="w-7 h-7 rounded-lg bg-indigo-500/20 text-indigo-400 font-bold flex items-center justify-center mb-2">Step 4</span>
+              <strong class="text-white block text-sm mb-1">Refine Skill.md Rules</strong>
+              <p class="text-slate-400">Tighten instructions directly in the markdown file (e.g., enforce P0/P1 tables, add non-negotiable clauses).</p>
+            </div>
+            <i class="fa-solid fa-circle-check text-emerald-400 hidden lg:block self-end mt-2"></i>
+          </div>
+        </div>
+      </div>
+
+      <!-- Division of Responsibilities: AI vs Human -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 pt-2">
+        <!-- AI Agent Side -->
+        <div class="bg-slate-800/50 p-5 rounded-2xl border border-slate-700 space-y-3">
+          <div class="flex items-center gap-2 text-indigo-400 font-bold text-sm">
+            <i class="fa-solid fa-microchip"></i>
+            <span>Handled by Modular AI Agent</span>
+          </div>
+          <ul class="space-y-2 text-xs text-slate-300">
+            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-400"></i> Automated multi-channel data extraction via MCP</li>
+            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-400"></i> Mechanical schema profiling & IQR outlier discovery</li>
+            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-400"></i> Trailing email triage & last-sender heuristics</li>
+            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-400"></i> First-pass BLUF report drafting and structured tables</li>
+          </ul>
+        </div>
+
+        <!-- Human Analyst Side -->
+        <div class="bg-slate-800/50 p-5 rounded-2xl border border-slate-700 space-y-3">
+          <div class="flex items-center gap-2 text-amber-400 font-bold text-sm">
+            <i class="fa-solid fa-user-tie"></i>
+            <span>High-Leverage Human Focus</span>
+          </div>
+          <ul class="space-y-2 text-xs text-slate-300">
+            <li class="flex items-center gap-2"><i class="fa-solid fa-star text-amber-400"></i> Formulating core business decisions & falsifiable hypotheses</li>
+            <li class="flex items-center gap-2"><i class="fa-solid fa-star text-amber-400"></i> Auditing causal vs correlational validity</li>
+            <li class="flex items-center gap-2"><i class="fa-solid fa-star text-amber-400"></i> Cross-functional leadership and executive strategy</li>
+            <li class="flex items-center gap-2"><i class="fa-solid fa-star text-amber-400"></i> Architecture maintenance of the Second Brain & Skill library</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Immediate Action Steps Banner -->
+      <div class="bg-indigo-600/30 border border-indigo-400/30 p-5 rounded-2xl flex flex-col sm:flex-row items-center justify-between gap-4">
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 rounded-xl bg-indigo-500 text-white flex items-center justify-center text-lg flex-shrink-0">
+            <i class="fa-solid fa-rocket"></i>
+          </div>
+          <div>
+            <h4 class="text-sm font-bold text-white">Ready to Deploy in Your Environment?</h4>
+            <p class="text-xs text-indigo-200">Organize your Obsidian vault into <code class="text-white font-mono">01-Inbox</code>, <code class="text-white font-mono">02-Projects</code>, and <code class="text-white font-mono">03-Archives</code> to begin building deterministic skills.</p>
+          </div>
+        </div>
+        <a href="#four-pillars" class="px-4 py-2 bg-indigo-500 hover:bg-indigo-400 text-white text-xs font-bold rounded-xl whitespace-nowrap shadow-md transition-colors">
+          Review Pillars <i class="fa-solid fa-arrow-up ml-1"></i>
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="bg-white border-t border-slate-200 mt-16 py-8">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
+      <div class="flex items-center gap-2">
+        <span class="w-6 h-6 rounded-lg bg-indigo-600 text-white flex items-center justify-center text-xs">
+          <i class="fa-solid fa-brain-circuit"></i>
+        </span>
+        <span>Reference Guide: Specialized AI Skills for Automated Data Analytics</span>
+      </div>
+
+      <!-- Required Footer Attribution -->
+      <div class="font-medium text-slate-600">
+        Designed by <a href="https://www.linkedin.com/notifications/?filter=all" target="_blank" rel="noopener noreferrer" class="text-indigo-600 hover:underline font-semibold">Anmoal Thethi</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JAVASCRIPT: INTERACTION & LOGIC -->
+  <script>
+    // --- 1. FLASHCARD CAROUSEL DATA & STATE ---
+    const flashcardsData = [
+      {
+        category: "Foundations",
+        term: "AI Skill File",
+        icon: "fa-solid fa-file-code",
+        definition: "A structured, plain-text Markdown (.md) document containing explicit role definitions, trigger phrases, prerequisites, step-by-step methodologies, and non-negotiable execution rules.",
+        impact: "Constrains the LLM before computation begins, eliminating metric definition drift, hallucinations, and unformatted outputs."
+      },
+      {
+        category: "Architecture",
+        term: "Second Brain",
+        icon: "fa-solid fa-box-archive",
+        definition: "A local directory of structured Markdown files storing business logic, project memos, schemas, and historical context.",
+        impact: "Maintains persistent local memory organized into 01-Inbox (dumps), 02-Projects (active briefs), and 03-Archives (stakeholder notes)."
+      },
+      {
+        category: "Connectivity",
+        term: "Model Context Protocol (MCP)",
+        icon: "fa-solid fa-network-wired",
+        definition: "An open protocol that allows the AI agent to securely query external applications and retrieve real-time operational data.",
+        impact: "Enables programmatic, sandboxed access to Google Calendar (schedules), Gmail (inbox threads), and Google Drive (CSVs and docs)."
+      },
+      {
+        category: "Vulnerability",
+        term: "Metric Definition Drift",
+        icon: "fa-solid fa-triangle-exclamation",
+        definition: "The tendency of unconstrained LLMs to conflate related business metrics with different temporal or cohort definitions.",
+        impact: "For example, confusing order-date with settlement-date, or mixing M1 with M3 repeat purchase rates across customer cohorts."
+      },
+      {
+        category: "Communication",
+        term: "BLUF (Bottom-Line-Up-Front)",
+        icon: "fa-solid fa-envelope-open",
+        definition: "A high-impact communication standard structuring findings into 4 parts: Answer, Evidence, Caveats, and Concrete Recommendation.",
+        impact: "Ensures decision-makers receive actionable insights immediately rather than burying takeaways at the end of a long technical narrative."
+      },
+      {
+        category: "Data Integrity",
+        term: "Confounding Variable Checks",
+        icon: "fa-solid fa-shuffle",
+        definition: "The deliberate examination of external factors (such as Simpson’s Paradox or acquisition mix shifts) before accepting a correlation.",
+        impact: "Prevents presenting observational associations as strategic causal proof to executives and stakeholders."
+      },
+      {
+        category: "Email Heuristic",
+        term: "Trailing 7-Day Last-Sender",
+        icon: "fa-solid fa-reply-all",
+        definition: "An inbox triage logic filtering threads from the past 7 days where the last message's sender email does not match the user's account.",
+        impact: "Replaces flawed 'is:unread' queries, capturing read-but-unanswered emails while dropping newsletters and security alerts."
+      },
+      {
+        category: "Anomaly Detection",
+        term: "Baseline Status-Quo vs. Acceleration",
+        icon: "fa-solid fa-chart-line-up",
+        definition: "A detection principle where established long-term trends (e.g. an 18-month gradual churn decline) are recognized as baseline.",
+        impact: "The agent only triggers an anomaly flag if the rate of change accelerates relative to trailing 3-month averages."
+      },
+      {
+        category: "Memory Architecture",
+        term: "In-Place Note Updating",
+        icon: "fa-solid fa-pen-to-square",
+        definition: "The procedure of verifying if an archive note (e.g. Stakeholder <Name>.md) exists and merging new data in-place rather than cloning.",
+        impact: "Eliminates duplicate markdown sprawl within the Second Brain, preserving historical revision continuity."
+      },
+      {
+        category: "Operational Guardrail",
+        term: "Actual vs. Plan Filtering",
+        icon: "fa-solid fa-filter",
+        definition: "The non-negotiable step of executing status == 'Actual' before computing period-over-period variance in enterprise CSVs.",
+        impact: "Stops unfulfilled targets and forward budget models from contaminating actual historical revenue or CAC calculations."
+      }
+    ];
+
+    let currentCardIndex = 0;
+    let isFlipped = false;
+
+    function renderCarouselBreadcrumbs() {
+      const container = document.getElementById('carouselBreadcrumbs');
+      container.innerHTML = '';
+      flashcardsData.forEach((item, index) => {
+        const btn = document.createElement('button');
+        btn.onclick = () => jumpToCard(index);
+        btn.className = `px-2.5 py-1 rounded-lg transition-all text-[11px] font-medium ${
+          index === currentCardIndex 
+            ? 'bg-indigo-600 text-white shadow-sm font-semibold' 
+            : 'bg-slate-100 hover:bg-slate-200 text-slate-600'
+        }`;
+        btn.innerText = `${index + 1}. ${item.term}`;
+        container.appendChild(btn);
+      });
+    }
+
+    function updateCardContent() {
+      const card = flashcardsData[currentCardIndex];
+      const cardInner = document.getElementById('cardInner');
+      
+      // Reset flip state on navigation
+      isFlipped = false;
+      cardInner.classList.remove('rotate-y-180');
+
+      // Update Front
+      document.getElementById('cardCategory').innerText = card.category;
+      document.getElementById('cardTerm').innerText = card.term;
+      document.getElementById('cardIcon').className = card.icon;
+      document.getElementById('cardFooterIdx').innerText = currentCardIndex + 1;
+
+      // Update Back
+      document.getElementById('backCardTerm').innerText = card.term;
+      document.getElementById('cardDefinition').innerText = card.definition;
+      document.getElementById('cardExampleText').innerText = card.impact;
+
+      // Update Counter and Breadcrumbs
+      document.getElementById('cardCounter').innerText = `${currentCardIndex + 1} / ${flashcardsData.length}`;
+      renderCarouselBreadcrumbs();
+    }
+
+    function flipCurrentCard() {
+      const cardInner = document.getElementById('cardInner');
+      isFlipped = !isFlipped;
+      if (isFlipped) {
+        cardInner.classList.add('rotate-y-180');
+      } else {
+        cardInner.classList.remove('rotate-y-180');
+      }
+    }
+
+    function nextCard() {
+      currentCardIndex = (currentCardIndex + 1) % flashcardsData.length;
+      updateCardContent();
+    }
+
+    function prevCard() {
+      currentCardIndex = (currentCardIndex - 1 + flashcardsData.length) % flashcardsData.length;
+      updateCardContent();
+    }
+
+    function jumpToCard(index) {
+      currentCardIndex = index;
+      updateCardContent();
+    }
+
+    // --- 2. PILLAR CARD DETAILS TOGGLE ---
+    function togglePillarCard(cardElement) {
+      const details = cardElement.querySelector('.pillar-details');
+      const toggleText = cardElement.querySelector('.pillar-toggle-text');
+      const chevron = cardElement.querySelector('.fa-chevron-down');
+      
+      const isExpanded = !details.classList.contains('hidden');
+      if (isExpanded) {
+        details.classList.add('hidden');
+        toggleText.innerText = 'Click to inspect';
+        chevron.classList.remove('rotate-180');
+      } else {
+        details.classList.remove('hidden');
+        toggleText.innerText = 'Click to collapse';
+        chevron.classList.add('rotate-180');
+      }
+    }
+
+    // --- 3. SKILL TABS SWITCHING ---
+    function switchSkillTab(skillKey) {
+      // Toggle button styles
+      const buttons = document.querySelectorAll('.skill-tab-btn');
+      buttons.forEach(btn => {
+        if (btn.getAttribute('data-skill') === skillKey) {
+          btn.className = "skill-tab-btn active px-4 py-2.5 rounded-xl font-semibold text-xs sm:text-sm transition-all duration-200 flex items-center gap-2 bg-indigo-600 text-white shadow-sm";
+        } else {
+          btn.className = "skill-tab-btn px-4 py-2.5 rounded-xl font-semibold text-xs sm:text-sm transition-all duration-200 flex items-center gap-2 bg-white text-slate-600 hover:bg-slate-100 hover:text-slate-900 border border-slate-200";
+        }
+      });
+
+      // Toggle panels
+      const panels = document.querySelectorAll('.skill-panel');
+      panels.forEach(p => p.classList.add('hidden'));
+
+      const activePanel = document.getElementById(`panel-${skillKey}`);
+      if (activePanel) {
+        activePanel.classList.remove('hidden');
+      }
+    }
+
+    // --- 4. ACCORDION COMPONENT ---
+    function toggleAccordion(btn) {
+      const content = btn.nextElementSibling;
+      const chevron = btn.querySelector('.fa-chevron-down');
+      const isHidden = content.classList.contains('hidden');
+      
+      if (isHidden) {
+        content.classList.remove('hidden');
+        chevron.classList.add('rotate-180');
+      } else {
+        content.classList.add('hidden');
+        chevron.classList.remove('rotate-180');
+      }
+    }
+
+    // --- 5. GOTCHAS FILTERING ---
+    function filterGotchas(category) {
+      // Filter buttons state
+      const filterBtns = document.querySelectorAll('.gotcha-filter');
+      filterBtns.forEach(btn => {
+        btn.classList.remove('active', 'bg-white', 'shadow-sm', 'text-slate-800');
+        btn.classList.add('text-slate-600');
+      });
+      event.target.classList.add('active', 'bg-white', 'shadow-sm', 'text-slate-800');
+      event.target.classList.remove('text-slate-600');
+
+      // Cards visibility
+      const cards = document.querySelectorAll('.gotcha-card');
+      cards.forEach(card => {
+        if (category === 'all' || card.getAttribute('data-cat') === category) {
+          card.classList.remove('hidden');
+        } else {
+          card.classList.add('hidden');
+        }
+      });
+    }
+
+    // --- 6. MATRIX SEARCH FILTER ---
+    function filterMatrix() {
+      const input = document.getElementById('matrixSearch').value.toLowerCase();
+      const rows = document.querySelectorAll('#matrixTable tbody tr');
+      
+      rows.forEach(row => {
+        const text = row.innerText.toLowerCase();
+        row.style.display = text.includes(input) ? '' : 'none';
+      });
+    }
+
+    // --- 7. UTILITY: COPY SCHEMA HEADERS ---
+    function copySchemaText() {
+      const schema = document.getElementById('schemaBox').innerText;
+      const textarea = document.createElement('textarea');
+      textarea.value = schema;
+      document.body.appendChild(textarea);
+      textarea.select();
+      try {
+        document.execCommand('copy');
+        alertUserFeedback('17-Column Schema copied to clipboard!');
+      } catch (err) {
+        console.error('Failed to copy', err);
+      }
+      document.body.removeChild(textarea);
+    }
+
+    // Custom feedback toast (avoids window.alert)
+    function alertUserFeedback(msg) {
+      const toast = document.createElement('div');
+      toast.className = 'fixed bottom-6 right-6 bg-slate-900 text-white text-xs px-4 py-2.5 rounded-xl shadow-2xl border border-slate-700 flex items-center gap-2 z-50 animate-bounce';
+      toast.innerHTML = `<i class="fa-solid fa-circle-check text-emerald-400"></i> ${msg}`;
+      document.body.appendChild(toast);
+      setTimeout(() => {
+        toast.remove();
+      }, 2500);
+    }
+
+    // --- INITIALIZE ON LOAD ---
+    window.addEventListener('DOMContentLoaded', () => {
+      renderCarouselBreadcrumbs();
+      updateCardContent();
+    });
+  </script>
+</body>
+</html>
